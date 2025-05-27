@@ -1,3 +1,4 @@
 # Rename this file to terraform.tfvars. These values are random.
-subscription_id = "407d88c9-aa2a-43fd-a240-8c41e4369e0b"
+subscription_id  = "407d88c9-aa2a-43fd-a240-8c41e4369e0b"
 ssh_save_to_file = true
+allowed_subnet   = "4.5.0.0/16"
