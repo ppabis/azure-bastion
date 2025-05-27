@@ -15,6 +15,18 @@ resource "azurerm_network_security_group" "vm_nsg" {
     destination_address_prefix = "*"
   }
 
+  security_rule {
+    name                       = "no-ingress-from-other-vms"
+    priority                   = 600
+    direction                  = "Inbound"
+    access                     = "Deny"
+    protocol                   = "Tcp"
+    destination_port_range     = "22"
+    source_port_range          = "*"
+    source_address_prefixes    = azurerm_subnet.private.address_prefixes
+    destination_address_prefix = "*"
+  }
+
   # Allow all outbound
   security_rule {
     name                       = "all-egress"
