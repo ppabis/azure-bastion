@@ -11,11 +11,12 @@ resource "azurerm_network_interface" "vm1_nic" {
 }
 
 resource "azurerm_virtual_machine" "vm1" {
-  name                  = "vm1"
-  location              = azurerm_resource_group.rg.location
-  resource_group_name   = azurerm_resource_group.rg.name
-  network_interface_ids = [azurerm_network_interface.vm1_nic.id]
-  vm_size               = "Standard_B1s"
+  name                          = "vm1"
+  location                      = azurerm_resource_group.rg.location
+  resource_group_name           = azurerm_resource_group.rg.name
+  network_interface_ids         = [azurerm_network_interface.vm1_nic.id]
+  vm_size                       = "Standard_B1s"
+  delete_os_disk_on_termination = true
   storage_image_reference {
     publisher = "Canonical"
     offer     = "ubuntu-24_04-lts"
