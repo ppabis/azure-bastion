@@ -1,0 +1,2 @@
+# Rename this file to terraform.tfvars. These values are random.
+subscription_id = "407d88c9-aa2a-43fd-a240-8c41e4369e0b"
