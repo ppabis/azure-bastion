@@ -10,6 +10,7 @@ This pattern is not possible to directly create in Azure but I tried my best.
 
 For more information, see my blog post:
 
+- [https://dev.to/ppabis/aws-session-manager-but-in-azure-introducing-azure-bastion-2597](https://dev.to/ppabis/aws-session-manager-but-in-azure-introducing-azure-bastion-2597)
 - [https://pabis.eu/blog/2025-06-10-Session-Manager-Equivalent-Azure-Bastion.html](https://pabis.eu/blog/2025-06-10-Session-Manager-Equivalent-Azure-Bastion.html)
 
 It does the following:
